@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  This is a wireframe responsive layout for a
+  book store book page originally described
+  in the assignment 4 write-up. The blocks for
+  bk-header, bk-illustration, bk-order-info,
+  bk-order-form and bk-description will be
+  filled in with information for a book.
+-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Responsive Layout</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            /* style for illustration block */
+            .bk-header {
+                background-color: red;
+                height: 75px;
+                font-family: Arial, sans-serif;
+                font-size: 10pt;
+                padding: 10px;
+            }
+            /* style for product outer-block */
+            .bk-product {
+                background-color: lightcyan;
+                font-family: Arial, sans-serif;
+                font-size: 10pt;
+            }
+            /** clearfix for product block elements */
+            .bk-product::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            /* style for illustration block */
+            .bk-illustration {
+                background-color: lightskyblue;
+                width: 200px;
+                height: 200px;
+                float:left;
+                padding: 0px 15px 10px 10px;
+            }
+            /*
+             * style for main block enclosing order,
+             * and description blocks
+             */
+            .bk-main {
+                background-color: yellow;
+                float:left;
+                width: calc(100% - 200px );
+            }
+            /* style for order block */
+            .bk-order {
+                background-color: violet;
+            }
+            /** clearfix for order block elements */
+            .bk-order::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            /* style for order info center block */
+            .bk-order-info {
+                background-color: orange;
+                width: calc(100% - 180px);
+                float: left;
+                padding: 10px;
+                height: 150px;
+            }
+            /* style for order form right block */
+            .bk-order-form {
+                background-color: burlywood;
+                width: 180px;
+                float: left;
+                padding: 10px;
+                height: 150px;
+            }
+            /* style for book description */
+            .bk-description {
+                background-color: lightgreen;
+                width: 100%;
+                padding: 10px;
+                height: 150px;
+            }
+            /* responsive layout for tablet if width < 800px */
+            @media screen and (max-width: 800px) {
+                .bk-order-info {
+                    width: 100%;
+                }
+            }
+            /* responsive layout for cell phone if width < 600px */
+            @media screen and (max-width: 700px) {
+                .bk-main {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="bk-header">
+            bk-header
+        </header>
+
+        <div class="bk-product">
+            <aside class="bk-illustration">
+                bk-illustration
+            </aside>
+
+            <main class="bk-main">
+                <div class="bk-order">
+                    <div class="bk-order-info">
+                        bk-order-info
+                    </div>
+                    <div class="bk-order-form">
+                        bk-order-form
+                    </div>
+                </div>
+                <div class="bk-description">
+                    bk-description
+                </div>
+            </main>
+        </div>
+
+    </body>
+</html>
+

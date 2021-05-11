@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, p {
+    font-weight: normal;
+    text-align: left;
+}
+h4 {
+    text-align: left;
+}
+li {
+    text-align: left;
+}
+/* Removing/narrowing the margin between content */
+.bk-narrow-margin {
+    margin: 0;
+}
+/* Hyperlink */
+.bk-link {
+    color:rgb(0, 113, 133);
+    text-decoration: none;
+}
+/* Hyperlink (hover) */
+.bk-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Book price */
+.bk-price {
+    color:rgb(177, 40, 4);
+    font-size: 18px;
+}
+/* Details block */
+details {
+    text-align: left;
+}
+/* Sneak peak icon */
+.bk-sneak-peak {
+    float: right;
+    padding-right: 2em;
+}
+/* Book cover photo */
+.bk-cover {
+    padding-bottom: 5%;
+}
+/* Title */
+.bk-title {
+    font-size: 30px;
+    margin: 0 0 0.6em 0;
+}
+/* Author  */
+.bk-author {
+    text-align: left;
+    margin: 0 0 1em 0;
+}
+/* Score / stars rating */
+.bk-score {
+    float: left;
+    margin: 0 0 0.6em 0;
+}
+/* Header block */
+.bk-header {
+    /* background-color: red; */
+    text-align: center;
+    margin: 0 0 3.2em 0;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+/* Illustration block */
+.bk-illustration {
+    width: 320px; /* fixed width */
+    float: left;
+    padding-left: 2%;
+    padding-bottom: 5%;
+}
+/* Content block */
+.bk-content {
+    overflow: hidden;
+    padding-right: 2%;
+}
+/* Order section */
+.bk-order {
+    border-style: solid;
+    border-width: 0.1em;
+    border-radius: 0.1em;
+    border-color: lightgray;
+    overflow: hidden;
+    --bk-order-form-width: 220px; /* fixed width for order section */
+}
+/* Order Info section */
+.bk-order-info {
+    /* displaying a variable width element next to a fixed width element */
+    width: calc(100% - var(--bk-order-form-width)); 
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    padding: 1%;
+}
+/* Availability text */
+.bk-availability {
+    color:rgb(0, 118, 0);
+}
+/* Table to hold contents ahout availability, price, etc side by side */
+.bk-available-table { 
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+}
+/* Styling for td in table */
+td {
+    margin: 0 0 0.6em 0;
+}
+/* Left column of table */
+.bk-table-left-col {
+    float: left;
+}
+/* Right column of table */
+.bk-table-right-col {
+    float: right;
+}
+/* Prime icon */
+.bk-prime-img {
+    width: 55px;
+    float: right;
+}
+/* Order form block */
+.bk-order-form {
+    text-align: center;
+    float: left;
+    width: var(--bk-order-form-width);
+    padding-left: 1%;
+    padding-right: 1%;
+}
+/* Specia offer block */
+.bk-special-offer {
+    background-color: rgb(88, 162, 88);
+    height: 90px;
+    width: 200px;
+    padding: 4%;
+    text-align: left;
+}
+/* Styling for buttons */
+.button {
+    float: left;
+    width: 200px;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    outline: none;
+}
+/* Button active */
+.button:active {
+    transform: translateY(1px);
+}
+/* Button hover */
+.button:hover {
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+/* Add to Cart button */
+.bk-cart-button {
+    height: 30px;
+    text-align: center;
+    margin: 1em 0 1em 0;
+    background: rgb(242, 201, 102) url(images/cart.png); /* Display icon inside button */
+    background-size: 10%;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+}
+/* Order Now button */
+.bk-order-button {
+    height: 30px;
+    text-align: center;
+    margin: 0 0 1em 0;
+    background: rgb(240, 164, 72) url(images/order.png); /* Display icon inside button */
+    background-size: 10%;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+}
+/* Description block */
+.bk-description {
+    text-align: center;
+}
+/* Responsive layout for tablet if width < 1000px */
+@media screen and (max-width: 1000px) {
+    .bk-order-info {
+        width: 100%;
+    }
+}
+/* Responsive layout for a phone if width < 600px */
+@media screen and (max-width: 600px) {
+    .bk-content {
+        width: 100%;
+    }
+}

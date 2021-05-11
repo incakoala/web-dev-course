@@ -1,0 +1,26 @@
+{
+  "name": "cs5610-assignment-5",
+  "version": "1.0.0",
+  "description": "React application that presents the responsive wireframe of the MERN Amazon page",
+  "main": "index.js",
+  "scripts": {
+    "watch": "babel src --out-dir public --watch --verbose",
+    "compile": "babel src --out-dir public",
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.ccs.neu.edu/2020FACS5610SV/assignment-5-thaivy"
+  },
+  "author": "Vy Thai",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-react": "^7.12.1"
+  }
+}

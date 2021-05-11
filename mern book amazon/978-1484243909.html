@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  This is the loosely modeled Amazon page for the "Pro MERN Stack" book.
+  It incorporates responsive layout techniques to allow for representation of the content
+  in various media displays.
+  The page is divided into 3 main blocks: header, content, and description.
+  Inside the content block are illustration, order info, and order form sub-blocks where the
+  first and last are fixed-width, allowing for a modular layout of the product page.
+  After reaching each cut point, these blocks will stack themselves appropriately.
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pro MERN Stack: Full Stack Web App Development with Mongo, Express, React, and Node 2nd ed. Edition</title>
+  <link rel="stylesheet" type="text/css" href="css/bookstore.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+</head>
+
+<body>
+  <header class="bk-header">
+    <h2 class="bk-title">Pro MERN Stack: Full stack Web Development with Mongo, Express, React,
+      and Node <span style="color:gray;font-size:27px">2nd ed. Edition</span></h2>
+    <p class="bk-author">by <a class="bk-link"
+        href="https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&field-author=Vasan+Subramanian&text=Vasan+Subramanian&sort=relevancerank&search-alias=books">Vasan
+        Subramanian</a> (Author)</p>
+
+    <div class="bk-score">
+      <div class="rating r-35"></div>
+    </div>
+  </header>
+
+  <div class="bk-main-block">
+    <div class="bk-illustration">
+      <img class="bk-sneak-peak"
+        src="https://images-na.ssl-images-amazon.com/images/G/01/digital/sitb/sticker/sitb-sticker-v3-small._CB485933792_.png"
+        alt="sneak peak">
+
+      <img class="bk-cover"
+        src="https://images-na.ssl-images-amazon.com/images/I/41NsQLhnYDL._SX348_BO1,204,203,200_.jpg" alt="mern book"
+        title="mern book cover" width="90%" ;>
+      <p class="bk-narrow-margin"><b>ISBN-13:</b> 978-1484243909</p>
+      <p class="bk-narrow-margin"><b>ISBN-10:</b> 1484243900</p>
+    </div>
+
+    <div class="bk-content">
+      <div class="bk-order">
+        <div class="bk-order-info">
+          <table class="bk-available-table">
+            <tr>
+              <td class="bk-table-left-col"><b>Buy new: </b></td>
+              <td class="bk-table-right-col"><span class="bk-price">$39.99</span></td>
+            </tr>
+            <tr>
+              <td class="bk-table-left-col"><span class="bk-availability">In Stock.</span></td>
+              <td class="bk-table-right-col"><a class="bk-link"
+                  href="https://www.amazon.com/gp/offer-listing/1484243900/ref=dp_olp_new?ie=UTF8&condition=new">11
+                  new</a> from <span class="bk-price">$39.99</span></td>
+            </tr>
+          </table>
+
+          <img class="bk-prime-img" src="css/images/prime.png">
+
+          <p>Ships from and sold by Amazon.com.</p>
+          <p>May be available at a lower price from <a class="bk-link"
+              href="https://www.amazon.com/gp/offer-listing/1484243900/ref=dp_olp_pn">other sellers</a>, potentially
+            without free Prime shipping.</p>
+
+          <p class="bk-narrow-margin">FREE delivery: <b>Friday, Oct 23</b></p>
+          <p class="bk-narrow-margin"><span style="color:gray">within 8 hrs and 10 mins</span> <a class="bk-link"
+              href="https://www.amazon.com/gp/help/customer/display.html/ref=ftinfo_dp_?ie=UTF8&pop-up=1&nodeId=3510241">Details</a>
+          </p>
+        </div>
+
+        <div class="bk-order-form">
+          <div class="bk-quantity">
+            <p>Qty:
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </p>
+          </div>
+
+          <div class="bk-special-offer">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Add 30-day FREE trial of Super-Duper shipping and get lightspeed Free Delivery
+          </div>
+
+          <button class="button bk-cart-button">Add to Cart</button>
+          <button class="button bk-order-button">Order Now</button>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="bk-description">
+        <p>Assemble the complete stack required to build a modern web app using MongoDB, Express, React, and Node. This
+          book also covers many other complementary tools: React Router, GraphQL, React-Bootstrap, Babel, and Webpack.
+          This new edition will use the latest version of React (React 16) and the latest React Router (React Router 4),
+          which has a significantly different approach to routing compared to React Router 2 which was used in the first
+          edition of the book.</p>
+
+        <details>
+          <summary class="bk-link">
+            Read more
+          </summary>
+
+          <p>Though the primary focus of Pro MERN Stack is to equip you with all that is required to build a
+            full-fledged web application, a large portion of the book will be devoted to React 16. The popular MEAN
+            (MongoDB, Express, AngularJS, Node) stack introduced Single Page Apps (SPAs) and front-end
+            Model-View-Controller (MVC) as new and efficient paradigms.</p>
+
+          <p>Facebook's React is a technology that competes indirectly with AngularJS. It is not a full-fledged MVC
+            framework. It is a JavaScript library for building user interfaces (in some sense the View part). Yet, it is
+            possible to build a web app by replacing AngularJS with React – hence the term MERN stack</p>
+
+          <h4>What You Will Learn</h4>
+
+          <li>Discover the features of React 16 to get the maximum out of this library</li>
+          <li>Gain the basics of MongoDB, Express, and Node to build a web app</li>
+          <li>Work with other libraries complementary to React, including React-Bootstrap, React Router, and GraphQL
+          </li>
+          <li>Use tools such as Babel and Webpack required to build JavaScript-based SPAs</li>
+          <li>Tie all the components together to build a complete web app.</li>
+
+          <h4>Who This Book Is For</h4>
+
+          <p>Developers and architects who have prior experience in any web app stack other than the MERN stack will
+            find the book useful to learn about this modern stack. Prior knowledge of JavaScript, HTML, and CSS is
+            required.</p>
+        </details>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
