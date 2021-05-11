@@ -1,1 +1,1 @@
-# cs5610-web-dev
+# web-dev-course
